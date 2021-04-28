@@ -124,7 +124,7 @@ function App() {
     web3.currentProvider.sendAsync(
       {
         method: "eth_signTypedData_v4",
-        params: [data],
+        params: [signerAdd, data],
         from: signerAdd 
       }, 
       function(err, result) {
